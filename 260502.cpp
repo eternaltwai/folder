@@ -643,9 +643,189 @@
 //	return 0;
 //}
 
+//#include <stdio.h>
+//int main()
+//{
+//	int round;
+//	for (round = 0; round < 10; round++)
+//	{
+//		printf("라운드 %d\n", round);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int round;
+//	for (round = 1; round <= 10; round++)
+//	{
+//		printf("라운드 %d\n", round);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int count;
+//	for (count = 101; count < 111; count++)
+//	{
+//		printf("아파트 %d동\n", count);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	int sum_number = 0;
+//	for (number = 1; number <= 20; number++)
+//	{
+//		sum_number = sum_number + number;
+//	}
+//	printf("도합 %d\n", sum_number);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int count;
+//	int number;
+//	printf("반복할 횟수를 입력하세요 :");
+//	scanf("%d", &count);
+//	for (number = 0; number < count; number++)
+//	{
+//		printf("삐약\n");
+//	}
+//	printf("\n");
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	for (number = 10; number <= 99; number++)
+//	{
+//		printf("%d\n", number);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	int sum;
+//	for (number = 3; number <= 8; number++)
+//	{
+//		sum = sum + number;
+//	}
+//	printf("숫자들을 곱한 값: %d\n", sum);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int number = 0;
+//
+//    for (number = 1; number <= 50; number++)
+//    {
+//        int first = number % 10;
+//        int second = number / 10;
+//
+//        if ((first % 3 == 0 && first) || (second % 3 == 0 && second)) {
+//            printf("%d\n", number);
+//        }
+//    }
+//    return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	printf("100 이하의 제곱수를 출력합니다.\n");
+//
+//	for (number = 1; (number * number) <= 100; number++)
+//	{
+//		printf("%d\n", number * number);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int num;
+//	printf("100이하 7의 배수를 출력합니다.\n");
+//
+//	for (num = 7; num <= 100; num + 7)
+//	{
+//		printf("%d\n", num);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char input;
+//	for (;;)
+//	{
+//		scanf(" %c ", &input);
+//		switch (input)
+//		{
+//		case 's':
+//			printf("start game\n");
+//			break;
+//		case 'e':
+//			printf("exit game\n");
+//			return 0;
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int exitFor, number;
+//	printf("1부터 10까지 곱한 수 출력 : ");
+//	for (number = 10, exitFor = number - 1; exitFor >= 1  ; number *= exitFor, exitFor--)
+//	{
+//
+//	}
+//	printf("%d\n", number);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//
+//	int number, exitFor;
+//	printf("1부터 10까지 곱한 수 출력 : ");
+//	for (number = 10, exitFor = number = 1; exitFor >= 10; number *= exitFor, exitFor--)
+//	{
+//
+//	}
+//	printf("%d\n", number);
+//	return 0;
+//}
+
 #include <stdio.h>
 int main()
 {
-	int round;
-
+	int count;
+	for (count = 0; count < 5; count++)
+	{
+		printf("%d\n", count);
+	}
+	return 0;
 }
