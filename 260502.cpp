@@ -829,3 +829,156 @@
 //	}
 //	return 0;
 //}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	for (number = 0; number <= 200; number += 11)
+//	{
+//		printf("%d\n", number);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	float sqLine;
+//	for (sqLine = 0; sqLine *4 <= 21; sqLine += 0.1)
+//	{
+//		printf("%0.1f\n", sqLine);
+//	}
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	printf("1반 1번\n");
+//	printf("1반 2번\n");
+//	printf("1반 3번\n");
+//	printf("2반 1번\n");
+//	printf("2반 2번\n");
+//	printf("2반 3번\n");
+//
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int myClass = 1;
+//	int student = 1;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//
+//	myClass++; student = 1;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int myClass = 1;
+//	int student;
+//	for (student = 1; student <= 3; student++)
+//	{
+//		printf("%d반 %d번\n", myClass, student);
+//	}
+//
+//	myClass++;
+//	for (student = 1; student <= 3; student++)
+//	{
+//		printf("%d반 %d번\n", myClass, student);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int myClass;
+//	int student;
+//	for (myClass = 1; myClass <= 2; myClass++)
+//	{
+//		for (student = 1; student <= 3; student++)
+//		{
+//			printf("%d반 %d번\n", myClass, student);
+//		}
+//	}
+//	return 0;
+//}
+//
+//#include <stdio.h>
+//int main()
+//{
+//	int myClass;
+//	int student;
+//	for (myClass = 1; myClass <= 8; myClass++) {
+//		for (student = 1; student <= 30; student++) {
+//			printf("%d반 %d번\n", myClass, student);
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int grade;
+//	int myClass;
+//	int student;
+//	for (grade = 1; grade <= 8; grade++)
+//	{
+//		for (myClass = 1; myClass <= 8; myClass++)
+//		{
+//			for (student = 1; student <= 30; student++)
+//			{
+//				printf("%d학년 %d반 %d번 \n", grade, myClass, student);
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	int secnumber;
+//	for (number = 2; number <= 9; number++)
+//	{
+//		for (secnumber = 1; secnumber <= 9; secnumber++)
+//		{
+//			printf("%d x %d = %d\n", number, secnumber, number * secnumber);
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	int secnumber;
+//	for (number = 2; number <= 9; number++)
+//	{
+//		if (number == 3) { continue; }
+//		for (secnumber = 1; secnumber <= 9; secnumber++)
+//		{
+//			printf("%d x %d = %d\n", number, secnumber, number * secnumber);
+//		}
+//	}
+//	return 0;
+//}
+
+#include <stdio.h>
+int main()
+{
+	int dice;
+	int secdice;
+}
