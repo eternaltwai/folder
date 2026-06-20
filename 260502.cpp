@@ -1165,70 +1165,31 @@ int main()
 
 	int xvar = 3;
 	int yvar = 1;
+	int count = 1;
+	int z = 1;
 
-	for (int x = xvar; x >= 1; x--) {
-		printf(" ");
-	}
-	for (int y = 1; y <= yvar; y++) {
-		printf("*");
-	}
-	printf("\n");
-	xvar--;
-	yvar += 2;
+	for (; count < 6;) {
+		for (int x = xvar; x >= 1; x--) {
+			printf(" ");
+		}
+		for (int y = 1; y <= yvar; y++) {
+			printf("*");
+		}
+		printf("\n");
+		xvar -= z;
+		yvar += 2 * z;
 
-	for (int x = xvar; x >= 1; x--) {
-		printf(" ");
+		if (yvar == 5) {
+			z = -z;
+		}
+		count++;
 	}
-	for (int y = 1; y <= yvar; y++) {
-		printf("*");
-	}
-	printf("\n");
-	xvar--;
-	yvar += 2;
+	return 0;
 
-	for (int x = xvar; x >= 1; x--) {
-		printf(" ");
-	}
-	for (int y = 1; y <= yvar; y++) {
-		printf("*");
-	}
-	printf("\n");
-	xvar--;
-	yvar += 2;
 
-	for (int x = xvar; x >= 1; x--) {
-		printf(" ");
-	}
-	for (int y = 1; y <= yvar; y++) {
-		printf("*");
-	}
-	printf("\n");
-	xvar++;
-	yvar -= 2;
-
-	for (int x = xvar; x >= 1; x--) {
-		printf(" ");
-	}
-	for (int y = 1; y <= yvar; y++) {
-		printf("*");
-	}
-	printf("\n");
-	xvar++;
-	yvar -= 2;
-
-	for (int x = xvar; x >= 1; x--) {
-		printf(" ");
-	}
-	for (int y = 1; y <= yvar; y++) {
-		printf("*");
-	}
-	printf("\n");
-	xvar++;
-	yvar -= 2;
-
-	//a = 1;
-	//n += a;
-	//a = -a;
-	//n += a;
+		//a = 1;
+		//n += a;
+		//a = -a;
+		//n += a;
 }
 
