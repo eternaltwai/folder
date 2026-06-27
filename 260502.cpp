@@ -1157,39 +1157,94 @@
 //	return 0;
 //}
 
+//#include <stdio.h>
+//int main()
+//{
+//	int LINE = 3;
+//	scanf("%d", &LINE);
+//
+//	int xvar = LINE;
+//	int yvar = 1;
+//	int count = 1;
+//	int z = 1;
+//
+//	for (; yvar >= 0;) {
+//		for (int x = xvar; x >= 1; x--) {
+//			printf(" ");
+//		}
+//		for (int y = 1; y <= yvar; y++) {
+//			printf("*");
+//		}
+//		printf("\n");
+//		xvar -= z;
+//		yvar += 2 * z;
+//
+//		if (xvar == 0) {
+//
+//			z = -z;
+//
+//			xvar -= z;
+//			yvar += 2 * z;
+//		}
+//		count++;
+//	}
+//	return 0;
+
+
+		/*a = 1;
+		n += a;
+		a = -a;
+		n += a;*/
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int LINE = 3;
+//
+//	scanf("%d", &LINE);
+//	int xvar = LINE;
+//	int yvar = 1;
+//
+//	for (int loop = 1; loop <= LINE; loop++) {
+//		for (int x = xvar; x >= 1; x--) {
+//			printf(" ");
+//		}
+//		for (int y = 1; y <= yvar; y++) {
+//			printf("%d", yvar);
+//		}
+//		printf("\n");
+//		xvar--;
+//		yvar++;
+//
+//	}
+//	return 0;
+//}
+
 #include <stdio.h>
 int main()
 {
-	//int LINE = 3;
-	//scanf("%d", &LINE);
+	int input;
+	int player = 0;
+	int a;
 
-	int xvar = 3;
-	int yvar = 1;
-	int count = 1;
-	int z = 1;
-
-	for (; count < 6;) {
-		for (int x = xvar; x >= 1; x--) {
-			printf(" ");
+	printf("<베스킨 라빈스 31!>\n");
+	printf("게임을 시작합니다! 31을 말하는 사람이 지게됩니다.\n");
+	for (;;) {
+		
+		for (int x = 1; x <= 3; x++) {
+			printf("%c : ", 'A' + player);
+			scanf("%d", &input);
+			if (input >= 31) {
+				break;
+			}
 		}
-		for (int y = 1; y <= yvar; y++) {
-			printf("*");
+		player = !player;
+		if (input >= 31) {
+			break;
 		}
-		printf("\n");
-		xvar -= z;
-		yvar += 2 * z;
-
-		if (yvar == 5) {
-			z = -z;
-		}
-		count++;
+		printf("턴이 넘어갑니다.\n");
 	}
-	return 0;
-
-
-		//a = 1;
-		//n += a;
-		//a = -a;
-		//n += a;
+			
+	printf("유저 %c의 승리입니다!\n", 'A' + player);
 }
-
