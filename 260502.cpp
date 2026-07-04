@@ -1221,30 +1221,138 @@
 //	return 0;
 //}
 
+//#include <stdio.h>
+//int main()
+//{
+//	int input;
+//	int player = 0;
+//	int num = 1;
+//
+//	printf("<베스킨 라빈스 31!>\n");
+//	printf("게임을 시작합니다! 31을 말하는 사람이 지게됩니다. (0 입력시 턴넘김)\n");
+//	for (;;) {
+//		
+//		for (int x = 1; x <= 3; x++) {
+//			printf("%c : ", 'A' + player);
+//			scanf("%d", &input);
+//
+//			if (num != input) {
+//				if (input == 0) {
+//					if (x == 1) {
+//						printf("턴을 넘기기 위해서는 하나 이상의 수를 말해야 합니다.\n");
+//						x--;
+//						continue;
+//					}
+//					break;
+//				}
+//
+//				printf("잘못된 입력입니다.\n");
+//				printf("지금 입력해야하는 값은 %d입니다.\n", num);
+//				x--;
+//				continue;
+//			}
+//
+//			num++;
+//			if (input >= 31) {
+//				break;
+//			}
+//		}
+//		player = !player;
+//		if (input >= 31) {
+//			break;
+//		}
+//		printf("턴이 넘어갑니다.\n");
+//	}
+//			
+//	printf("유저 %c의 승리입니다!\n", 'A' + player);
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	float conversion = 0;
+//	while (conversion < 2)
+//	{
+//		printf("%.1f\n", conversion);
+//		conversion = conversion + 0.1;
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	float conversion = 0;
+//	for (conversion < 2) {
+//		printf("%.1f\n", conversion);
+//		conversion = conversion + 0.1;
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	for (double conversion = 90; conversion > 0.1; conversion /= 3)
+//	{
+//		if (conversion == 10.0)
+//		{
+//			continue;
+//		}
+//		printf("%.31f\n", conversion);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	double conversion = 90;
+//	while (conversion > 0.1)
+//	{
+//		if (conversion == 10.0)
+//		{
+//			conversion /= 3;
+//			continue;
+//		
+//		}
+//		printf("%.31f\n", conversion);
+//		conversion /= 3;
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	while (1) {
+//		scanf("%d", &number);
+//		if (number == 0) {
+//			printf("프로그램 종료\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	for (;;) {
+//		scanf("%d", &number);
+//		if (number == 0) {
+//			printf("프로그램 종료\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+
 #include <stdio.h>
 int main()
 {
-	int input;
-	int player = 0;
-	int a;
-
-	printf("<베스킨 라빈스 31!>\n");
-	printf("게임을 시작합니다! 31을 말하는 사람이 지게됩니다.\n");
-	for (;;) {
-		
-		for (int x = 1; x <= 3; x++) {
-			printf("%c : ", 'A' + player);
-			scanf("%d", &input);
-			if (input >= 31) {
-				break;
-			}
-		}
-		player = !player;
-		if (input >= 31) {
-			break;
-		}
-		printf("턴이 넘어갑니다.\n");
-	}
-			
-	printf("유저 %c의 승리입니다!\n", 'A' + player);
+	int for_flag = 1;
+	int num
 }
