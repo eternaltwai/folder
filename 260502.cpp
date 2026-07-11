@@ -1350,9 +1350,43 @@
 //	return 0;
 //}
 
-#include <stdio.h>
-int main()
+//#include <stdio.h>
+//int main()
+//{
+//	int for_flag = 1; // 1
+//	int number = 0; // 2
+//	for (; for_flag; ) { // 3 8
+//		printf("number = %d\n", number); // 4 9 
+//		for (; number++ ;) // 5 10 
+//		{
+//			printf(">>umber = %d\n", number); // 11
+//			if (number == 3) { // 12
+//				for_flag = 0; // 13
+//				break; // 14
+//			}
+//		}
+//		number++; // 6 15
+//		printf(">>number = %d\n", number); // 7 16
+//	}
+//	printf("%d %d\n", for_flag, number); // 17
+//	return 0; // 18
+//}
+
+//#include <iostream>
+//void main()
+//{
+//	int number, count;
+//	std::cin >> number >> count;
+//
+//	std::cout << "new : " << " " << count << std::endl;
+//}
+
+#include <iostream>
+#include <bitset>
+void main()
 {
-	int for_flag = 1;
-	int num
+	int number, count;
+	std::cin >> number >> count;
+
+	std::cout << "new : " << " " << count << std::endl;
 }
