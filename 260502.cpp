@@ -1697,6 +1697,33 @@
 //	cout << "num[1] = " << num[1] << endl;
 //}
 
+//#include <iostream>
+//using namespace std;
+//
+//void main()
+//{
+//	int num[4] = { 4,3,1,2 };
+//	int temp;
+//
+//	temp = num[0];
+//	num[0] = num[2];
+//	num[2] = temp;
+//
+//	temp = num[3];
+//	num[3] = num[1];
+//	num[1] = temp;
+//
+//
+//	temp = num[2];
+//	num[2] = num[3];
+//	num[3] = temp;
+//
+//	for (int i = 0; i < 4; i++)
+//	{
+//		cout << "num["<< i <<"] = " << num[i] << endl;
+//	}
+//}
+
 #include <iostream>
 using namespace std;
 
@@ -1705,14 +1732,61 @@ void main()
 	int num[4] = { 4,3,1,2 };
 	int temp;
 
-	temp = num[0];
-	num[0] = num[2];
-	num[1] = num[3];
-	num[2] = num[2];
-	num[3] = temp;
+	//for (int i = 0; i < 4; i++)
+	//{
+	//	if (num[i] > num[i++])
+	//	{
+	//		temp = num[i];
+	//		num[i] = num[i++];
+	//		num[i++] = temp;
+	//	}
+	//	else { continue; }
+	//}
 
-	cout << "num[0] = " << num[0] << ", ";
-	cout << "num[1] = " << num[1] << ", ";
-	cout << "num[2] = " << num[2] << ", ";
-	cout << "num[3] = " << num[3] << endl;
+	int k;
+	int con = 3;
+
+	k = 0;
+	for (int i = 0; i < 3; i++) {
+		if (num[k] > num[k + 1])
+		{
+			temp = num[k + 1];
+			num[k] = num[k + 1];
+			num[k + 1] = temp;
+		}
+		k++;
+	}
+
+
+	k = 0;
+	for (int i = 0; i < 2; i++) {
+		if (num[k] > num[k + 1])
+		{
+			temp = num[k + 1];
+			num[k] = num[k + 1];
+			num[k + 1] = temp;
+		}
+		k++;
+	}
+
+
+	k = 0;
+	for (int i = 0; i < 1; i++) {
+		if (num[k] > num[k + 1])
+		{
+			temp = num[k + 1];
+			num[k] = num[k + 1];
+			num[k + 1] = temp;
+		}
+		k++;
+	}
+
+	
+
+	
+
+
+	for (int i = 0; i < 4; i++) {
+		cout << "num[" << i << "] = " << num[i] << endl;
+	}
 }
