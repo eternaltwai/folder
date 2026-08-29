@@ -1724,69 +1724,217 @@
 //	}
 //}
 
+//#include <iostream>
+//using namespace std;
+//
+//void main()
+//{
+//	int num[4] = {};
+//	int temp;
+//
+//	for (int i = 0; i <= 3; i++) {
+//		cin >> num[i];
+//	}
+//
+//	int k;
+//	int con = 3;
+//
+//	for(;con >= 1;)
+//	{
+//		k = 0;
+//		for (int i = 0; i < con; i++) {
+//			if (num[k] > num[k + 1])
+//			{
+//				temp = num[k + 1];
+//				num[k + 1] = num[k];
+//				num[k] = temp;
+//			}
+//			k++;
+//		}
+//		con--;
+//	}
+//	/*k = 0;
+//	for (int i = 0; i < 2; i++) {
+//		if (num[k] > num[k + 1])
+//		{
+//			temp = num[k + 1];
+//			num[k + 1] = num[k];
+//			num[k] = temp;
+//		}
+//		k++;
+//	}
+//	con--;
+//
+//
+//	k = 0;
+//	for (int i = 0; i < 1; i++) {
+//		if (num[k] > num[k + 1])
+//		{
+//			temp = num[k + 1];
+//			num[k + 1] = num[k];
+//			num[k] = temp;
+//		}
+//		k++;
+//	}*/
+//
+//	
+//
+//	
+//
+//
+//	for (int i = 0; i < 4; i++) {
+//		cout << "num[" << i << "] = " << num[i] << endl;
+//	}
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void main()
+//{
+//	int *buff;
+//	buff = new int[2];
+//	cin >> buff[0] >> buff[1];
+//
+//	cout << "new : " << buff[0] << " " << buff[1] << endl;
+//	delete buff;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void main()
+//{
+//	int n;
+//	cin >> n;
+//	int* buff = new int[n];
+//	for (int i = 0; i < n; i++)
+//		cin >> buff[i];
+//	for (int i = 0; i < n; i++)
+//		cout << buff[i] << "";
+//	delete buff;
+//}
+
+//#include <iostream>
+//#include <ctime>
+//using namespace std;
+//
+//void main()
+//{
+//	srand((unsigned int)time(NULL));
+//
+//	int n;
+//	cin >> n;
+//	
+//	int* buff = new int[n];
+//	for (int i = 0; i < n; i++) {
+//		buff[i] = rand() % 5 + 5;
+//	}
+//
+//	cout << "new : ";
+//	for (int i = 0; i < n; i++) {
+//		cout << buff[i] << "";
+//	}
+//	cout << endl;
+//
+//	delete buff;
+//}
+
+//#include <iostream>
+//#include <ctime>
+//using namespace std;
+//
+//void main()
+//{
+//	srand((unsigned int)time(NULL));
+//
+//	int n;
+//	cin >> n;
+//
+//	int* buff = new int[n];
+//	for (int i = 0; i < n; i++)
+//	{
+//		buff[i] = rand() % 101;
+//	}
+//
+//	char grade[6] { 'F','D','C','B','A','A' };
+//	for (int i = 0; i < n; i++)
+//	{
+//		cout << "" << i + 1 << "번째 학생 : ";
+//		cout << "( " << buff[i] << "점 ) - ";
+//		cout << grade[buff[i] / 20];
+//		cout << endl;
+//	}
+//	delete buff;
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s(10, '_');
+//	cout << s << endl;
+//	cout << s.length() << endl;
+//	cout << s.empty() << endl;
+//
+//	s.clear();
+//	cout << s.empty() << endl;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void main()
+//{
+//	int num = 100;
+//	int* pNum = &num;
+//
+//	cout << "num = " << num << endl;
+//	cout << "&num = " << &num << endl;
+//	cout << "*pNum = " << *pNum << endl;
+//	cout << "pNum = " << pNum << endl;
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main() {
+//	string s;
+//	getline(cin, s);
+//	cout << s.substr(7, 5) << endl;
+//	s.append(" :)");
+//	s += "\n hi";
+//	cout << s << endl;
+//	s.insert(5, "??");
+//	cout << s << endl;
+//	printf("%s", s.c_str());
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main() 
+//{
+//	string s = "Hello!";
+//	cout << s[0] << endl; // 
+//	cout << s.at(1) << endl;
+//	cout << s.front() << endl;
+//	cout << s.back() << endl;
+//}
+
 #include <iostream>
+#include <string>
 using namespace std;
 
 void main()
 {
-	int num[4] = { 4,3,1,2 };
-	int temp;
-
-	//for (int i = 0; i < 4; i++)
-	//{
-	//	if (num[i] > num[i++])
-	//	{
-	//		temp = num[i];
-	//		num[i] = num[i++];
-	//		num[i++] = temp;
-	//	}
-	//	else { continue; }
-	//}
-
-	int k;
-	int con = 3;
-
-	k = 0;
-	for (int i = 0; i < 3; i++) {
-		if (num[k] > num[k + 1])
-		{
-			temp = num[k + 1];
-			num[k] = num[k + 1];
-			num[k + 1] = temp;
-		}
-		k++;
-	}
-
-
-	k = 0;
-	for (int i = 0; i < 2; i++) {
-		if (num[k] > num[k + 1])
-		{
-			temp = num[k + 1];
-			num[k] = num[k + 1];
-			num[k + 1] = temp;
-		}
-		k++;
-	}
-
-
-	k = 0;
-	for (int i = 0; i < 1; i++) {
-		if (num[k] > num[k + 1])
-		{
-			temp = num[k + 1];
-			num[k] = num[k + 1];
-			num[k + 1] = temp;
-		}
-		k++;
-	}
-
-	
-
-	
-
-
-	for (int i = 0; i < 4; i++) {
-		cout << "num[" << i << "] = " << num[i] << endl;
-	}
+	string s = "example string";
+	char search = 'e';
+	int at = s.find(search, 0);
+	cout << "'e' is at" << at << "" << endl;
+	cout << s.rfind("e") << endl;
 }
