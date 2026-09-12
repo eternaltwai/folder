@@ -1926,15 +1926,249 @@
 //	cout << s.back() << endl;
 //}
 
-#include <iostream>
-#include <string>
-using namespace std;
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s = "example string";
+//	char search = 'e';
+//	int at = s.find(search, 0);
+//	cout << "'e' is at" << at << " " << endl;
+//	cout << s.rfind("e") << endl;
+//	if (s.find("xyz") == string::npos)
+//		cout << "없음" << endl;
+//}
 
-void main()
-{
-	string s = "example string";
-	char search = 'e';
-	int at = s.find(search, 0);
-	cout << "'e' is at" << at << "" << endl;
-	cout << s.rfind("e") << endl;
-}
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s;
+//	getline(cin, s);
+//	int len = s.length();
+//	for (int i = len - 1; i >= 0; i--)
+//	{
+//		cout << s[i];
+//	}
+//}
+
+/*
+종료하시려면 quit을 입력해주세요.
+문자열을 입력해주세요 : hello world
+찾을 문자를 입력해주세요 : hel
+1번째에 잇습니다
+찾을 문자를 입력해주세요 : lo
+4번째에 잇습니다
+찾을 문자를 입력해주세요 : zz
+없습니다
+찾을 문자를 입력해주세요 : quit
+프로그램 종료
+*/
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s;
+//	cout << "종료하시려면 quit을 입력해주세요." << endl;
+//	cout << "문자열을 입력해주세요 : ";
+//	getline(cin, s);
+//	string text;
+//	for (;;)
+//	{
+//		cout << "찾을 문자를 입력해주세요 : ";
+//		getline(cin, text);
+//		int pos = s.find(text, 0);
+//		if (text == "quit") { break; }
+//		if (s.find(text) == string::npos)
+//		{
+//			cout << "찾으시는 문자가 없습니다." << endl;
+//		}
+//		else
+//		cout << "찾으시는 문자는 " << pos + 1 << "번째에 있습니다." << endl;
+//		
+//	}
+//	cout << "프로그램을 종료합니다." << endl;
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s;
+//	cin >> s;
+//	cout << s.substr(7, 5) << endl;
+//	cout << s << endl;
+//
+//	s.insert(5, "??");
+//	cout << s << endl;
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s = "Hello, World!";
+//	s.replace(7, 5, "C++");
+//	cout << s << endl;
+//	cout << s << endl;
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s = "apple";
+//	cout << s.compare("apple") << endl;
+//	cout << s.compare("banana") << endl;
+//	cout << s.compare("aaa") << endl;
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s = "42";
+//	int n = stoi(s);
+//	double d = stod("3.14");
+//	string t = to_string(n * 2);
+//	cout << n << " " << d << " " << t << endl;
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s = "apple,banana,cherry";
+//	string delim = ",";
+//	size_t pos = 0;
+//	while ((pos = s.find(delim)) != string::npos) {
+//		cout << s.substr(0, pos) << " ";
+//		s.erase(0, pos + delim.length());
+//	}
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//void main()
+//{
+//	string s = "This is a sample string";
+//	s = s.replace(10, 6, "useful");
+//	cout << s << endl;
+//}
+
+//#include <iostream>
+//#include <string>
+//#include <math.h>
+//using namespace std;
+//
+//void main()
+//{
+//	string s;
+//	int temp;
+//	int result = 0;
+//	int i = 0;
+//	int sectemp;
+//	double power;
+//	cin >> s;
+//	int len = s.length() - 1;
+//
+//	for (;len >= 0;) {
+//		if (s[i] <= 'F' && s[i] >= 'A')
+//		{
+//			temp = s[i] - 'A' + 10;
+//			power = pow(16, len);
+//			sectemp = temp * power;
+//		}
+//		else if (s[i] >= '1' && s[i] <= '9')
+//		{
+//			temp = s[i] - '0';
+//			power = pow(16, len);
+//			sectemp = temp * power;
+//		}
+//		result += sectemp;
+//		i++;
+//		len--;
+//	}
+//
+//	cout << result << endl;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void main()
+//{
+//	int num = 100;
+//	int *pNum = &num;
+//
+//	cout << "num = " << num << endl;
+//	cout << "&num = " << &num << endl;
+//	cout << "*pNum = " << *pNum << endl;
+//	cout << "pNum = " << pNum << endl;
+//}
+
+//#include <iostream> 
+//using namespace std;
+//
+//void main()
+//{
+//	int value = 50;
+//	int* ptr = &value;
+//	
+//	cout << "변경 전 value: " << value << endl;
+//
+//	*ptr = 100;
+//	cout << "변경 후 value: " << value << endl;
+//}
+
+//#include <stdio.h>
+//
+//void main()
+//{
+//	char a = 'A';
+//	char* pA = &a;
+//	int b = 100;
+//	int* pB = &b;
+//
+//	double c = 3.14;
+//	double* pC = &c;
+//
+//	printf("pA의 크기 : %d byte\n", sizeof(pA));
+//	printf("pB의 크기 : %d byte\n", sizeof(pB));
+//	printf("pC의 크기 : %d byte\n", sizeof(pC));
+//
+//	printf("*pA의 크기 : %d byte\n", sizeof(*pA));
+//	printf("*pB의 크기 : %d byte\n", sizeof(*pB));
+//	printf("*pC의 크기 : %d byte\n", sizeof(*pC));
+//}
+
+//#include <stdio.h>
+//void main()
+//{
+//	int* numptr;
+//	int num1 = 10;
+//	int num2 = 20;
+//	numptr = &num1;
+//	printf("%d\n", *numptr);
+//	numptr = &num2;
+//	printf("%d\n", *numptr);
+//}
+
